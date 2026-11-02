@@ -1,0 +1,18 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rhistory
+.RData
+LTMP data/
+*.csv
+*.mat
+*.rds
+*.gif
+LTMP data/
+.RProj.user/
+.Rhistory
+LTMP data/
+.Rproj.user/
+.Rhistory
