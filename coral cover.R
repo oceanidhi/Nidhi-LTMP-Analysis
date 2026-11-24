@@ -48,6 +48,10 @@ habitat <- left_join (habitat1, cleaned_reefnames, by = "AIMS_REEF_NAME") %>%
   group_by(SHELF, AIMS_REEF_NAME, FULLREEF_ID, REEF_LAT, REEF_LONG, REPORT_YEAR, SITE_DEPTH, COMP_2021, reefmod_ID)%>%
   summarise(avgcover = mean(COVER))
 
+head(habitat)
+
+write.csv(habitat, file = "Habitat data", row.names = TRUE)
+
 # checking which reefs fall under which P_CODE
 LTMP_split <- habitat1 %>%
   distinct(P_CODE, AIMS_REEF_NAME) %>%

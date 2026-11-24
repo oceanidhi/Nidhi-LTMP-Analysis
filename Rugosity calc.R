@@ -9,3 +9,8 @@ library(tidyr)
 library(stringi)
 library(stringr)
 library(ggplot2)
+library(caRbs)
+
+ls("package:caRbs")
+help(package = "caRbs")
+
